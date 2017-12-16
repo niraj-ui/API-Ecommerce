@@ -1,0 +1,28 @@
+doctype html
+html(lang='en')
+  head
+    title cart
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+  body
+    section.container
+        .product
+            h1 Cart in Total product 
+             
+                 
+            <hr>
+            
+
+            div.row
+                each item, i in status
+                       div.col-lg-3(style="border:1px solid #ccc;padding:15px 15px;") 
+
+                       
+                        p='Name: '+ item.productName  
+                        p='Price: '+ item.productPrice
+                        p='Brand: '+ item.productBrand
+                          <hr>
+                          a(href="http://localhost:8000/product/cart/"+"#{item.id}")  add to cart |
+                       
+                     
+                       
+                          a(href="http://localhost:8000/product/single/"+"#{item.id}")  View Details 

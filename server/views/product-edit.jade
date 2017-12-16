@@ -1,0 +1,30 @@
+doctype html
+html(lang='en')
+  head
+    title Update Product
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+  body
+    section.container
+        .login
+            h1 Update product in admin panel
+        form(method='post', action='http://localhost:8000/product/' + '#{status[0]._id}' + '/update')
+    
+            p 
+              input(type='text', name='productName', value='#{status[0].productName}', placeholder='Prodcut Name', required='') 
+              
+            p
+              input(type='text', name='productCat' value='#{status[0].productCat}', placeholder=' Category Name', required='')
+            
+            p
+              input(type='text', name='productBrand' value='#{status[0].productBrand}', placeholder=' Brand Name', required='')
+            
+            p
+              input(type='text', name='productPrice' value='#{status[0].productPrice}', placeholder='Prodcut  Price', required='')
+                 
+            p
+              input(type='text', name='productDes' value='#{status[0].productDes}', placeholder='Prodcut Description ', required='')               
+
+            p.submit
+              input(type='submit', name='', value='Update Product' )
+
+  

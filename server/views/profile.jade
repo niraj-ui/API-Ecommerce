@@ -1,0 +1,16 @@
+doctype html
+html(lang='en')
+  head
+    title signup
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+  body
+    section.container
+        .login
+            h1 User Dashboard
+            p user Name #{user.name}
+            p Mobile #{user.mobile}
+            p email #{user.email}
+
+
+            p
+              a(href="http://localhost:8000/user/logout") logout

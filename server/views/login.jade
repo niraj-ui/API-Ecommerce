@@ -1,0 +1,25 @@
+doctype html
+html(lang='en')
+  head
+    title signup
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+     
+  body
+    section.container
+        .login
+            h1 Log in to the web app
+        form(method='post', action='http://localhost:8000/user/login')
+           
+            
+            p
+              input(type='email', name='email' value='', placeholder='email', required='')
+            
+            p
+              input(type='password', name='password' value='', placeholder='password', required='')
+           
+          
+            p.submit
+              input(type='submit', name='', value='sign up' )
+            
+            h4 Forgot Password
+              a(href="http://localhost:8000/user/forget")  click Here               

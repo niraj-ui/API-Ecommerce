@@ -1,0 +1,20 @@
+doctype html
+html(lang='en')
+  head
+    title Single Product Detials
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+  body
+    section.container
+        .login
+            h1 Update product in admin panel
+            p Product Name: #{status[0].productName} 
+            p Product Category: #{status[0].productCat} 
+            p Product Brand: #{status[0].productBrand} 
+            p Product Price: #{status[0].productPrice} 
+            p Product Description: #{status[0].productDes} 
+            a(href="http://localhost:8000/product/"+ "#{status[0].id}" + "/edit")  product edit
+            a(href="http://localhost:8000/product/delete/"+"#{status[0].id}")  product delete
+              
+              
+          
+  

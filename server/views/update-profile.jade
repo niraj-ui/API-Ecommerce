@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+  head
+    title signup
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+  body
+    section.container
+        .login
+            h1 Sign up to the web app
+        form(method='post', action='http://localhost:8000/user/update-profile')
+            p 
+              input(type='text', name='name', value='', placeholder='first Name', required='') 
+              
+            p
+              input(type='password', name='password' value='', placeholder='password', required='')
+            
+            p
+              input(type='email', name='email' value='', placeholder='email', required='')
+            
+            p
+              input(type='phone', name='mobile' value='', placeholder='mobile', required='')
+
+            p.submit
+              input(type='submit', name='', value='Update Profile' )
+
+  

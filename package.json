@@ -1,0 +1,16 @@
+{
+  "name": "e-cart",
+  "version": "0.0.1",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "latest",
+    "cookie-parser": "latest",
+    "express": "latest",
+    "express-session": "^1.15.6",
+    "jade": "latest",
+    "mongoose": "latest",
+    "morgan": "latest",
+    "nodemon": "latest"
+  }
+}

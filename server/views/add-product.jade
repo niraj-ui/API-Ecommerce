@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+  head
+    title Add Product
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+  body
+    section.container
+        .login
+            h1 Add product in admin panel
+        form(method='post', action='http://localhost:8000/product/addproduct')
+            p 
+              input(type='text', name='productName', value='', placeholder='Prodcut Name', required='') 
+              
+            p
+              input(type='text', name='productCat' value='', placeholder=' Category Name', required='')
+            
+            p
+              input(type='text', name='productBrand' value='', placeholder=' Brand Name', required='')
+            
+            p
+              input(type='text', name='productPrice' value='', placeholder='Prodcut  Price', required='')
+                 
+            p
+              input(type='text', name='productDes' value='', placeholder='Prodcut Description ', required='')               
+
+            p.submit
+              input(type='submit', name='', value='Add Product' )
+
+  

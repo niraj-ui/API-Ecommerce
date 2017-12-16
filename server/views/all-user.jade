@@ -1,0 +1,32 @@
+doctype html
+html(lang='en')
+  head
+    title cart
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+  body
+    section.container
+        .product
+            h1 Total User listing
+                #{cart}
+            
+            <hr>
+            table.table-bordered.table-hover.table-striped.col-lg-12
+                    thead
+                        tr
+                            th #
+                            th Name
+                            th Email Id
+                            th Mobile number
+                            th Password
+                            th User remove
+                    tbody
+                        each item, i in status
+                            tr
+                                td= i+1
+                                td= item.name
+                                td= item.email
+                                td= item.mobile
+                                td= item.password
+                                td
+                                  a(href="http://localhost:8000/user/delete/"+"#{item.id}")  User Delete
+                                
